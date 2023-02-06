@@ -6,20 +6,16 @@
             About me!
         </title>
         <style>
-            
-            h1 {
+            ul li {
+                line-height: 2em;
+            }
+            h1, h2, h3 {
                 /*background-color: white;*/
                 color : rgb(0, 0, 0);
                 
             }
-            h2 {
-                /*background-color: white;*/
-                color : rgb(0, 0, 0);
-                font-size: 1.5em;
-            }
-            h3 {
-                /*background-color: white;*/
-                color : rgb(0, 0, 0);
+            h1:hover, h2:hover, h3:hover {
+                background-color: rgb(248, 255, 199);
             }
             .lovey-dovey{
                 color:green
@@ -37,6 +33,21 @@
             }
             a {
                 text-decoration:underline;
+            }
+            a:active {
+                background-color: rgb(255, 214, 255);
+            } 
+            a:focus {
+                background-color: rgb(255, 214, 255);
+            }   
+            a:hover {
+                color:rgb(255,214,255);
+            }
+            a:link {
+                color:blue;
+            }
+            a:visited {
+                color:black;
             }
             p {
                 /*background-color: white;*/
@@ -80,31 +91,51 @@
                 background-color: white;
                 /* font-family: "Arial", monospace; */
             }
-            .photo{
-                border:5px ridge black;
+            #photo{
+                /* border:3px ridge black; */
+                margin-left: 110px;
                 /* position: absolute; fixedp
                 top: 50px;
                 left: 50px;
                 z-index: 1; */
 
             }
-            /* .fonts {
-                font-family: "Arial", monospace;
-            } */
-
+            .action {
+                cursor:pointer;
+                padding:10px;
+                margin-left: 10px;
+            }
+            .action:hover {
+                background-color: #00A5D2;
+                color: white;
+            }
+            #table1 {
+                position: absolute;
+                top: 300px;
+            }
+            .container {
+                padding:40px;
+            }
         </style>
     </head>
     <body>
         <h1 class="fonts"><strong>About me!</strong></h1>
-        <ul class="fonts">
-            <li><a href="#infoLnk">Basic Information</a></li>
-            <li><a href="#eduLink">Education</a></li>
-            <li><a href="#songLink">Songs</a></li>
-        </ul>
 
-        <h2 id="infoLink" class="fonts">Basic info :</h2>
+        <a href="#infoLink"><button class="action">Sport Information</button></a>
+        <a href="#eduLink"><button class="action">Education</button></a>
+        <a href="#songLink"><button class="action">Favourite Song</button></a>
+    
+        <h2 id="infoLink" class="fonts">Sport info :</h2>
+        <a target="_blank" href="https://olympic.kz/ru/article/8983-rauan-amantayuly-zavoeval-bronzu-na-chm-sredi-kadetov-i-molodezhi">
+            <ul>
+                <li><p class="background">
+                    That's my first <span class="lovey-dovey">World Championship in karate do (WKF)</span>
+                </p></li>
+            </ul>
+            
+        </a>
 
-        <table>
+        <table id="table1" class="container">
             <thead>
                 <tr>
                     <th>Place   </th>
@@ -140,16 +171,9 @@
                 </tr>
             </tbody>
         </table>
-        <a target="_blank" href="https://olympic.kz/ru/article/8983-rauan-amantayuly-zavoeval-bronzu-na-chm-sredi-kadetov-i-molodezhi">
-            <ul>
-                <li><p class="background">
-                    That's my first <span class="lovey-dovey">World Championship in karate do (WKF)</span>
-                </p></li>
-            </ul>
-            
-        </a>
+        
 
-        <img src="https://olympic.kz/images/1571890906.jpg" alt="It's me at my first World Championship" width="300" class="photo">
+        <img src="https://olympic.kz/images/1571890906.jpg" alt="It's me at my first World Championship" width="300" id="photo" class="container">
 
         <ul class="fonts">
             <li>My name is Rauan and I am eighteen</li>
