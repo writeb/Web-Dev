@@ -1,0 +1,10 @@
+<div class="category">
+  <h2>Categories:</h2>
+  <app-category> </app-category>
+</div>
+
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <app-product-item [product]="product"></app-product-item>
+</div>
