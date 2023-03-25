@@ -12,7 +12,7 @@ export interface Product {
   category: number;
 }
 
-export const products = [
+export const products : Product[] = [
   {
     id: 1,
     name: 'IPhone 14 Pro 128Gb purple',
